@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(Images/background.png);
+    background-size: cover;
+}
+
+#logo {
+    width: 550px;
+    height: auto;
+    position: absolute; 
+    top: 20%;
+    left: 27%;
+}
+#logo:hover {
+    transform:scale(1.1);
+    transition: transform 0.5s ease;
+}
+#setting {
+    position: absolute;
+    right: 50px;
+    width: 50px;
+    top: 30px;
+}
+#logo:hover+#setting{
+    transform: rotate(7200deg);
+    transition: transform 60s ease;
+}
+#content {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+#content div {
+    margin: 20px;
+    text-align: center;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color:white;
+    padding: 7px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: radial-gradient(circle at 10% 20%, grey, darkblue);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover {
+    color: black;
+    background-image: radial-gradient(circle at 10% 20%, white, lightblue);
+}
+
+#box3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;   
+}
+
