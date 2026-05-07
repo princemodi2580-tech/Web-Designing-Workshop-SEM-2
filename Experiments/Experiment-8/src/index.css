@@ -1,0 +1,17 @@
+body {
+  margin: 100px;
+  align-content: center;
+}
+
+.class {
+  display: flex;
+  flex-direction: column;
+}
+.b1 {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgb(58, 133, 233);
+  color:white;
+  border-radius: 5px;
+  border-width: 0;
+}
