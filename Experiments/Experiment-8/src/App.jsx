@@ -11,7 +11,7 @@ function App() {
     <>
     <body>
       <h1>React Counter Application</h1>
-      <h1>{count}</h1>
+      <h1 id="total">{count}</h1>
       <div class="Card">
         <button onClick={() => setCount(count + 1)} class="b1"><b>Increment (+)</b></button>
         <button onClick={() => setCount(count - 1)} class="b1"><b>Decrement (-)</b></button>
