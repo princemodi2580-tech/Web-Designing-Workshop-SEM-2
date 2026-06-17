@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro_Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color:#f1f3f6;
+        }
+        .product-card:hover{
+            transform:translateY(-5px);
+            transition:0.3s;
+        }
+        .product-card img{
+            height:220px;
+            object-fit:cover;
+        }
+        footer{
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Micro_Tech</a>
+            <img src="logo.png" alt="Logo" width="80" class="d-inline-block align-text-top ms-2"> 
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card product-card shadow-sm">
+                    <img src="https://img.magnific.com/premium-photo/laptop-with-sunset-screen_948904-432.jpg"
+                        class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">Gaming Laptop</h5>
+                        <p class="card-text">
+                            Powerful laptop for multitasking and gaming.
+                        </p>
+                        <h6>
+                            ₹55,000
+                            <span class="badge bg-success">Latest</span>
+                        </h6>
+                        <button class="btn btn-outline-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal1">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card product-card shadow-sm">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.2TXGWlkDq6G0N_XzVUBVPQHaFz?rs=1&pid=ImgDetMain&o=7&rm=3"
+                        class="card-img-top" alt="Phone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">
+                            Stylish mobile with advanced camera features.
+                        </p>
+                        <h6>
+                            ₹32,000
+                            <span class="badge bg-warning text-dark">Hot</span>
+                        </h6>
+                        <button class="btn btn-outline-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal2">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card product-card shadow-sm">
+                    <img src="https://cdn.pixabay.com/photo/2020/04/19/16/33/headphones-5064411_1280.jpg"
+                        class="card-img-top" alt="Headset">
+                    <div class="card-body">
+                        <h5 class="card-title">Wireless Headset</h5>
+                        <p class="card-text">
+                            Crystal clear sound with deep bass quality.
+                        </p>
+                        <h6>
+                            ₹6,000
+                            <span class="badge bg-info">Trending</span>
+                        </h6>
+                        <button class="btn btn-outline-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal3">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gaming Laptop</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Intel i7 Processor, 16GB RAM and 1TB SSD storage.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Smartphone</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    108MP camera with high speed processor and AMOLED display.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Wireless Headset</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Comfortable headphones with premium noise cancellation.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white p-3">
+        © 2026 TechShop | All Rights Reserved
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
