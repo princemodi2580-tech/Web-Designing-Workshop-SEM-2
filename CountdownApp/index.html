@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 10%;
+            margin-left: 35%;
+            background-color: rgb(236, 107, 107);
+        }
+        #Box{
+            padding:20px;
+            width: 400px;
+            height: auto;
+            background-color: blue;
+            border-radius:20px;
+        }
+        #b1{
+            width:250px;
+        }
+        button{
+            background-color: rgb(236, 107, 107);
+            width: 100px;
+            height:40px;
+            border-radius: 10px;
+        }
+        #output{
+            color: white;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="Box">
+        <h2>CountDown Timer</h2>
+        <input type="integer" id="b1" placeholder="Enter the number to start countdown"><br><br>
+        <button onclick="start()">Countdown</button>
+        <div id="output"></div>
+    </div>
+    <script>
+        function start(){
+            let num = document.getElementById("b1").value;
+            let output="";
+            for (let i=num; i>=1; i--) {
+                output+=i+"<br>";
+            }
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</body>
+</html>
+
